@@ -34,8 +34,16 @@ import { getCartQuantity } from "./actions/actions";
 
   function App(props) {
     const location = useLocation()
-    // const [shoppingCart, setShoppingCart] = useState([])
     const [quantity, setQuantity] = useState(0)
+
+    // Add this test vulnerability - Unsafe DOM manipulation
+    useEffect(() => {
+      // WARNING: This is intentionally vulnerable code for testing CodeQL
+      const userInput = new URLSearchParams(location.search).get('message');
+      if (userInput) {
+        document.getElementById('box').innerHTML = userInput; // Unsafe direct DOM manipulation
+      }
+    }, [location]);
 
     const getQuantity = useCallback(async() => {
       let quantity = 0;
