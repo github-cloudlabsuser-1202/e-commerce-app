@@ -35,7 +35,7 @@
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.ApiExplorer" Version="2.3.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
 		<PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.ComputerVision" Version="7.0.1" />
-		<PackageReference Include="Microsoft.Azure.Cosmos" Version="3.51.0" />
+		<PackageReference Include="Microsoft.Azure.Cosmos" Version="3.53.0" />
 		<PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.20" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.20">
